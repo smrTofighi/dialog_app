@@ -6,14 +6,14 @@ import 'package:sliding_clipped_nav_bar/sliding_clipped_nav_bar.dart';
 
 class MainView extends StatelessWidget {
   MainView({Key? key}) : super(key: key);
-  RxInt selectedIndex = 0.obs;
+  RxInt selectedIndex = 1.obs;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: SolidColors.themeColor,
       appBar: AppBar(
         backgroundColor: SolidColors.themeColor,
-        title: const Text('پیام رسان'),
+        title: const Text('دیالوگ', style: TextStyle(fontSize: 26),),
         elevation: 0,
         actions: [
           IconButton(
