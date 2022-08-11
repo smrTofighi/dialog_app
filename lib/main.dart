@@ -1,4 +1,4 @@
-import 'package:chat_app/pages/main_page.dart';
+import 'package:chat_app/views/main_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
@@ -30,7 +30,7 @@ class ChatApp extends StatelessWidget {
 
       locale: const Locale('fa', 'IR'),
 
-      home: MainPage(),
+      home: MainView(),
     );
   }
 }

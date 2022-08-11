@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import '../constant/colors.dart';
 
-class ChatsPage extends StatelessWidget {
-  const ChatsPage({Key? key}) : super(key: key);
+class ChatsView extends StatelessWidget {
+  const ChatsView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

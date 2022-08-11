@@ -1,11 +1,11 @@
 import 'package:chat_app/constant/colors.dart';
-import 'package:chat_app/pages/chats_page.dart';
+import 'package:chat_app/views/chats_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sliding_clipped_nav_bar/sliding_clipped_nav_bar.dart';
 
-class MainPage extends StatelessWidget {
-  MainPage({Key? key}) : super(key: key);
+class MainView extends StatelessWidget {
+  MainView({Key? key}) : super(key: key);
   RxInt selectedIndex = 0.obs;
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MainPage extends StatelessWidget {
               onPressed: (() {}), icon: const Icon(Icons.notification_add))
         ],
       ),
-      body: const ChatsPage(),
+      body: const ChatsView(),
       bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
       ),
